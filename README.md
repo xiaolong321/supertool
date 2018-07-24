@@ -2,6 +2,8 @@
 
 一个网站神器的集合之地。
 
+demo地址：[猛戳这里](https://supertoolbox.herokuapp.com)
+
 ## 开发流程
 
 把项目下载到本地
