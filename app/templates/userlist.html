@@ -1,0 +1,26 @@
+{% from 'bootstrap/pagination.html' import render_pagination %} 
+
+{% if users %}
+<div class="panel panel-success">
+    <div class="panel-heading">
+        <h3 class="panel-title">用户</h3>
+    </div>
+    <div class="panel-body">
+        <div style="float:none;text-align:center">
+            <div class="row">
+                {% for user in users %}
+                {% set user_profile = url_for('main.user', username=user.username) %}
+                <a class="btn btn-primary" href="{{ user_profile }}">{{ user.username }}</a>
+                {% endfor %}
+            </div>
+            <div class="row">
+                {% if pagination.pages > 1 %}
+                <div>
+                    {{ render_pagination(pagination) }}
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endif %}

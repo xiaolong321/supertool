@@ -1,0 +1,10 @@
+flask
+flask-bootstrap
+flask-wtf
+flask-sqlalchemy
+flask-migrate
+flask-login
+flask-debugtoolbar
+flask-moment
+gunicorn
+psycopg2

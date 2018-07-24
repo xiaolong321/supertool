@@ -1,0 +1,10 @@
+{% extends 'layout.html' %}
+{% import 'bootstrap/wtf.html' as wtf %}
+
+{% block app_content %}
+    <div class="page-header">
+        <h1>这里总会有你想要的神器，没有就自己上传个</h1>
+    </div>
+    {{ wtf.quick_form(form) }}
+    {% include 'toolbox.html' %}
+{% endblock %}
